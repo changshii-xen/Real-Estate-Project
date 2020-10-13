@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Source/css/test.css">
+    <title>Document2</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">RealEstate.</a>
+        <a href="#news">Home</a>
+        <a href="#contact">Pages</a>
+        <a href="#about">Property</a>
+        <a href="#about">Blog</a>
+        <a href="#about">Contact</a>
+        <!-- <div class="dropdown">
+          <button class="dropbtn">Dropdown 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>  -->
+        
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <div class="parallax">
+      <div class="header" style="padding-left:16px">
+        <h2>Find Your Property</h2>
+        <p>Esteem spririt temper to say addieus who direct esteem</p>
+        <!-- <p>Hover over the dropdown button to open the dropdown menu.</p> -->
+      </div>
+
+    <select id="pronvince" class="filterable">
+        <option value="">Pronvince</option>
+        <option value="WC">Western Cape</option>
+        <option value="KZN">KwaZulu Natal</option>
+        <option value="JHB">Johannesburg</option>
+      </select>
+      <select id="propertyT" class="filterable">
+        <option value="">Property Type</option>
+        <option value="Apartment">Apartment</option>
+        <option value="Cottage">Cottage</option>
+        <option value="Penthouse">Penthouse</option>
+      </select>
+      <select id="rooms" class="filterable">
+        <option value="">Rooms</option>
+        <option value="1 Room">1 Room</option>
+        <option value="2 Rooms">2 Rooms</option>
+        <option value="3 Rooms">3 Rooms</option>
+      </select>
+      <select id="bathrooms" class="filterable">
+        <option value="">Bathrooms</option>
+        <option value="1 bathroom">1</option>
+        <option value="2 bathrooms">2</option>
+        <option value="3 bathrooms">3</option>
+      </select>
+
+      <div id="PropertyDiv"></div>
+      <span id="Found"> </span>
+
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script defer src="../../Source/javascript/test2.js"></script>
+</body>
+</html>
