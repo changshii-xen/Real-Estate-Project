@@ -1,11 +1,11 @@
 
 body {margin:0;font-family:Arial}
-
+/* Navbar */
 .topnav {
   overflow: hidden;
   background-color: #fff;
 }
-
+/* Navbar links */
 .topnav a {
   float: left;
   display: block;
@@ -15,7 +15,7 @@ body {margin:0;font-family:Arial}
   text-decoration: none;
   font-size: 17px;
 }
-
+/* Active  */
 .active {
   background-color: #4CAF50;
   color: white;
@@ -25,12 +25,12 @@ font-weight: bold;
 .topnav .icon {
   display: none;
 }
-
+/* Dropdown */
 .dropdown {
   float: left;
   overflow: hidden;
 }
-
+/* Dropdown btn */
 .dropdown .dropbtn {
   font-size: 17px;    
   border: none;
@@ -41,7 +41,7 @@ font-weight: bold;
   font-family: inherit;
   margin: 0;
 }
-
+/* Dropdown content */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -73,7 +73,7 @@ font-weight: bold;
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+/*  */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -83,7 +83,7 @@ font-weight: bold;
     display: block;
   }
 }
-
+/* Navbar Responsiveness */
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
@@ -104,23 +104,44 @@ font-weight: bold;
     text-align: left;
   }
 }
+/* Parallax effect */
 .parallax {
   /* The image used */
   background-image: url("../../Public/images/bg.jpg");
 
   /* Set a specific height */
-  min-height: 500px; 
-
+  height: 500px;;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* Header */
 .header{
     text-align: center;
     font-weight: 1500;
+}
+h2{
+  font-size: 50px;
+  color: #f9f9f9;
+}
+p{
+  font-size: 25px;
+  color: #f9f9f9;
+}
+#heading2{
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: #111;
+}
+/* Center */
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 15px;
+  text-align: center;
 }
 .centre{
   margin-left: 38%;
@@ -138,55 +159,15 @@ font-weight: bold;
     width: 100%;
     margin-right: 50%;
   }
- } /*
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-} */
-
-/* Remove extra left and right margins, due to padding */
-/* .row {margin: 0 -5px;} */
-
-/* Clear floats after the columns */
-/* .row:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-
-/* Style the counter cards */
-/* .card {
-  
-  text-align: center;
-  
-  transition: all 300ms ease-in-out;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.card:focus,.card:hover{
-  transform: scale(1.15);
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-}
-@media screen and (max-width: 600px) {
-  .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-  }
-} */
-
+ }
+/* Property Card image */
 .propertyCard img{
   height: 170px;
   width: 290px;
+  
   /* margin-left: 15%; */
 }
-/* .column {
-  float: right;
-  width: 250%;
-  padding: 0 10px;
-} */
+
 
 /* Remove extra left and right margins, due to padding */
 .row {margin: 0 -5px;}
@@ -211,5 +192,50 @@ font-weight: bold;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
+}
+/* Slides */
+.mySlides {
+  display:none;
+  align-items: center;
+}
+
+/* Text area */
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+/* Submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Hover over submit button */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/* Form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* LC Studio footer */
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: green;
+  color: white;
+  text-align: center;
 }
