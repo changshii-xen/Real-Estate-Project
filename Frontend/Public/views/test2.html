@@ -8,89 +8,60 @@
     <title>Document2</title>
 </head>
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">RealEstate.</a>
-        <a href="#news">Home</a>
-        <a href="#contact">Pages</a>
-        <a href="#about">Property</a>
-        <a href="#about">Blog</a>
-        <a href="#about">Contact</a>      
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
       <!-- This is the responsive nav bar -->
       <div class="parallax"></br>
         <!-- The parallax has an img that disapears once scrolling down -->
+        <div class="header" style="padding-left:16px">
+          <h1>Find Your Property</h2>
+          <!-- styling the main text -->
+        </div>
       <div class="center">
     <select id="pronvince" class="filterable">
-        <option value="">Pronvince</option>
-        <option value="WC">Western Cape</option>
-        <option value="KZN">KwaZulu Natal</option>
-        <option value="JHB">Johannesburg</option>
+        <option value="" style="color:#303841;">Pronvince</option>
+        <option value="Western Cape" style="color:#303841;">Western Cape</option>
+        <option value="KwaZulu Natal" style="color:#303841;">KwaZulu Natal</option>
+        <option value="Johannesburg" style="color:#303841;">Johannesburg</option>
       </select>
       <select id="propertyT" class="filterable">
-        <option value="">Property Type</option>
-        <option value="Apartment">Apartment</option>
-        <option value="Cottage">Cottage</option>
-        <option value="Penthouse">Penthouse</option>
+        <option value="" style="color:#303841;">Property Type</option>
+        <option value="Apartment" style="color:#303841;">Apartment</option>
+        <option value="Cottage" style="color:#303841;">Cottage</option>
+        <option value="Penthouse" style="color:#303841;">Penthouse</option>
       </select>
       <select id="rooms" class="filterable">
-        <option value="">Rooms</option>
-        <option value="1 Room">1 Room</option>
-        <option value="2 Rooms">2 Rooms</option>
-        <option value="3 Rooms">3 Rooms</option>
+        <option value="" style="color:#303841;">Rooms</option>
+        <option value="1 Room" style="color:#303841;">1 Room</option>
+        <option value="2 Rooms" style="color:#303841;">2 Rooms</option>
+        <option value="3 Rooms" style="color:#303841;">3 Rooms</option>
       </select>
       <select id="bathrooms" class="filterable">
-        <option value="">Bathrooms</option>
-        <option value="1 bathroom">1</option>
-        <option value="2 bathrooms">2</option>
-        <option value="3 bathrooms">3</option>
+        <option value="" style="color:#303841;">Bathrooms</option>
+        <option value="1 bathroom" style="color:#303841;">1</option>
+        <option value="2 bathrooms" style="color:#303841;">2</option>
+        <option value="3 bathrooms" style="color:#303841;">3</option>
       </select>
+      <select id="priceRange" class="filterable">
+        <option value="" style="color:#303841;">Price Range</option>
+        <option value="R200K-R490K" style="color:#303841;">R200K-R490K</option>
+        <option value="R500K-R690K" style="color:#303841;">R500K-R690K</option>
+        <option value="R700K-R790K" style="color:#303841;">R700K-R790K</option>
+        <option value="R800K+" style="color:#303841;">R800K+</option>
+      </select>
+
+      
     </div></br>
     <!-- this part categorises the dropdown options and making it onclick -->
-    <div class="header" style="padding-left:16px">
-      <h2>Find Your Property</h2>
-      <p>Esteem spririt temper to say addieus who direct esteem</p>
-      <!-- styling the main text -->
+    
     </div>
-    </div>
-    <h3 id="heading2">Most Popular Property On Sale!!!!</h3>
-  </br>
-  <div class="center">
-    <div class="w3-content w3-display-container">
-      <img class="mySlides" src="../images/CapeTown-a.jpg" style="width:100%">
-      <img class="mySlides" src="../images/JHB-a.jpg" style="width:100%">
-      <img class="mySlides" src="../images/KZN-a2.jpg" style="width:100%">
-      <img class="mySlides" src="../images/bg.jpg" style="width:100%">
-        <!-- displaying the images from a certain folder -->
-      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-        <!-- these onlick buttons with the arrows, once clicked displays the next image -->
-    </div>
-  </div>
+    
   </br>
       <div id="PropertyDiv"></div>
       <!-- Calling all the info from the js file, the functionality and the display form -->
       <span id="Found"> </span>
 
-      <div class="container">
-        <!-- Displaying the form -->
-        <form >
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-        </form>
+     
 
-        <div class="footer">
-          <p>© LC Studio Design</p>
-        </div>
-        <!-- This displaying the end of the footer -->
+        
 
       <script>
         function myFunction() {
